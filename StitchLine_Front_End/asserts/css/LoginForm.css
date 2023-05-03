@@ -1,0 +1,143 @@
+
+
+:root {
+    --main-color: #fff;
+    --second-color: #347deb;
+    --box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    --facebook-color: rgb(60, 90, 154);
+    --google-color: rgb(220, 74, 61);
+}
+
+
+
+#logNav{
+    background-color: var(--facebook-color);
+}
+
+#login1 {
+    padding-top: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--facebook-color);
+    font-family: "Berlin Sans FB";
+    font-weight: 100;
+    text-shadow: var(--box-shadow);
+
+}
+.client-info1 {
+    display: block;
+    margin: 20px auto;
+    width: 88%;
+    height: 50px;
+    border: solid #999 1px;
+    border-radius: 5px;
+    text-indent: 15px;
+    transition: all 200ms;
+    box-shadow: var(--box-shadow);
+}
+.client-info1:focus {
+    width: 94%;
+}
+#lbl23 {
+    position: absolute;
+    margin: -76px 130px;
+    font-size: 12px;
+    white-space: nowrap;
+    background: #fff;
+    padding: 0 5px;
+    color: #999;
+    transition: all 200ms;
+    text-shadow: var(--box-shadow);
+}
+#email1:focus ~ label[for="email1"] {
+    margin: -76px 70px;
+}
+#password1:focus ~ label[for="password1"] {
+    margin: -76px 70px;
+}
+#submit1 {
+    border: none;
+    font-size: 25px;
+    background-color: #1d1d1d;
+    font-family: "Calisto MT";
+    color: white;
+    width: 72%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#submit1:hover {
+    background-color: #df98fa;
+}
+
+.social1 {
+    background-color: #fff;
+    display: block;
+    margin: 10px auto;
+    width: 82%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition-duration: 200ms;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--box-shadow);
+}
+#createacc {
+    border: solid var(--facebook-color) 1px;
+    color: var(--facebook-color);
+}
+#createacc:hover {
+    background-color: var(--facebook-color);
+    color: white;
+}
+#banerText{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    animation: welcome 6s linear infinite;
+}
+@keyframes welcome {
+    0%{
+        -webkit-text-stroke: 0.1vw #dede68;
+    }
+    25%{
+
+        -webkit-text-stroke: 0.1vw #b59cf3;
+    }
+    50%{
+
+        -webkit-text-stroke: 0.1vw #7abaff;
+    }
+    75%{
+
+        -webkit-text-stroke: 0.1vw #15ec07;
+    }
+    100%{
+        /*color: beige;*/
+        -webkit-text-stroke: 0.1vw #e7ebee;
+    }
+}
+#banerText::before {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #37b9f1;
+    overflow: hidden;
+    position: absolute;
+    content: attr(data-text);
+    border-right: 2px solid #37b9f1;
+    -webkit-text-stroke: 0vw #f7f7fe;
+    animation: animate2 6s linear infinite;
+}
+
+@keyframes animate2 {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asserts/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asserts/css/login.css?ver=1">
+    <link rel="stylesheet" href="asserts/css/LoginForm.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>login form</title>
+</head>
+<body>
+<nav class="navbar navbar-dark" id="logNav">
+    <a class="navbar-brand " id="banerText" href="">
+        welcome / සාදරයෙන් පිළිගනිමු Stitch-Line
+    </a>
+</nav>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+            <div ><img class="imagecontainer" src="asserts/image/undraw_unlock_24mb.png"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+            <div class="card text-dark mb-3" id="maincard">
+                <div class="card-body">
+
+                    <h1 id="login1">LogIn Form</h1><br>
+                    <input type="text" id="email1" class="client-info1">
+                    <label id="lbl23" for="email1">User Name</label>
+                    <input type="password" id="password1" class="client-info1">
+                    <label id="lbl23" for="password1">Password</label>
+                    <input type="submit" id="submit1" class="client-info1" value="Log  In">
+
+                    <button class="social1 " type="button" id="createacc" data-toggle="modal" data-target="#exampleModalCenter">user registration</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h6 class="modal-title text-white" id="exampleModalLongTitle">create your account / please follow the rules</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-white bg-dark" >
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputUserName">username</label>
+                                    <input type="text" minlength="3" maxlength="10" class="form-control" id="inputUserName"
+                                           placeholder="shiran" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword">password</label>
+                                    <input type="password" maxlength="10" class="form-control" id="inputPassword"
+                                           placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputName">name</label>
+                                    <input type="text" class="form-control" id="inputName"
+                                           placeholder="shiran sandaruwan" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputContactNo">contact no</label>
+                                    <input type="number" maxlength="10" class="form-control" id="inputContactNo"
+                                           placeholder="0779187704" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">address</label>
+                                <input type="text" class="form-control" id="inputAddress"
+                                       placeholder="panadura" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail" >email :</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required >
+                            </div>
+
+                            <div class="form-group">
+                                <select class="custom-select" id="carstype">
+                                    <option selected>select your type</option>
+                                    <option value="1">user</option>
+                                    <option value="2">admin</option>
+
+                                </select>
+                            </div>
+
+
+                            <div class="form-row " id="hideOr">
+                                <div class="form-group col-md-6">
+                                    <label for="employeeNo">employee no : </label>
+                                    <input type="number" class="form-control" id="employeeNo"
+                                           placeholder="" maxlength="10" required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputNIC">nic no : </label>
+                                    <input type="number" class="form-control" id="inputNIC"
+                                           placeholder="" maxlength="10" required>
+                                </div>
+                            </div>
+
+
+
+                            <p style="font-size: 12px">
+                            </p>
+                            <div class="modal-footer">
+                                <div style="width: 100%; text-align: center">
+                                    <button type="button" class="btn btn-success" id="btncreate">Create Account</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery and Bootstrap Bundle-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+<script src="asserts/js/jquery.js"></script>
+<script src="asserts/js/LoginForm.js"></script>
+<script src="asserts/js/login.js"></script>
+</body>
+</html>
